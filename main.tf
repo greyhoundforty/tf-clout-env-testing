@@ -7,7 +7,7 @@ resource "random_string" "prefix" {
 # If an existing resource group is not specified, terraform will create a new one and use it for all deployed resources.
 resource "ibm_resource_group" "group" {
   count = var.existing_resource_group != "" ? 0 : 1
-  name  = "${var.prefix}-resource-group"
+  name  = "${local.project_prefix}-resource-group"
   tags  = local.tags
 }
 
