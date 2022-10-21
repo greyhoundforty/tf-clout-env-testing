@@ -1,1 +1,3 @@
-output "workspace" { value = terraform.workspace }
+output "workspace" {
+  value       = terraform.workspace
+}
