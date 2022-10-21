@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "ibm" {
-  region           = var.region
+  region = var.region
 }

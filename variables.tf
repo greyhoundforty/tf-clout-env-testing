@@ -21,10 +21,7 @@ variable "existing_ssh_key" {
   default     = ""
 }
 
-variable "prefix" {
-  type        = string
-  description = "String that will be prefixed to all resources. For example if your prefix is foo your VPC would be named foo-vpc."
-}
+
 
 variable "classic_access" {
   description = "Classic Access to the VPC"
