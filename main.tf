@@ -18,7 +18,7 @@ resource "tls_private_key" "ssh" {
 
 # If an existing SSH key is not specified, terraform will create a new one and use it for all deployed resources. 
 resource "ibm_is_ssh_key" "generated_key" {
-  name           = "${var.prefix}-${var.region}-key"
+  name           = "${local.project_prefix}-${var.region}-key"
   public_key     = tls_private_key.ssh.public_key_openssh
   resource_group = local.resource_group_id
   tags           = local.tags
