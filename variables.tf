@@ -1,7 +1,7 @@
-# variable "ibmcloud_api_key" {
-#   type        = string
-#   description = "IBM Cloud API Key"
-# }
+variable "owner" {
+  type    = string
+  default = "ryantiffany"
+}
 
 variable "region" {
   type        = string

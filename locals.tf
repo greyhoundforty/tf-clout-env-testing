@@ -12,7 +12,7 @@ locals {
   }
 
   tags = [
-    "vpc:${var.project_prefix}-vpc",
+    "vpc:${local.project_prefix}-vpc",
     "region:${var.region}",
     "owner:${var.owner}",
     "workspace:${terraform.workspace}",

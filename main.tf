@@ -29,7 +29,7 @@ module "vpc" {
 
   create_vpc                  = true
   vpc_name                    = "${local.project_prefix}-vpc"
-  resource_group_id           = data.ibm_resource_group.group.id
+  resource_group_id           = local.resource_group_id
   classic_access              = false
   default_address_prefix      = "auto"
   default_network_acl_name    = "${local.project_prefix}-vpc-default-network-acl"
