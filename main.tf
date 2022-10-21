@@ -1,7 +1,7 @@
 resource "random_string" "prefix" {
-  length  = 12
+  length  = 6
   special = false
-  lower   = true
+  upper   = false
 }
 
 # If an existing resource group is not specified, terraform will create a new one and use it for all deployed resources.
